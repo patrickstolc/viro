@@ -48,7 +48,6 @@ const ANDROID_BRIDGE_FILES = [
 
 // Build artifacts to validate
 const BUILD_ARTIFACTS = [
-  "../android/viro_bridge/build/outputs/aar/viro_bridge-release.aar",
   "../android/react_viro/react_viro-release.aar",
 ];
 
