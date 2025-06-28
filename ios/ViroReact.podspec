@@ -15,8 +15,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '12.0'
   
   # Base source files (always included)
-  s.source_files        = 'ViroReact/**/*.{h,m,mm}', 'ViroFabric/**/*.{h,m,mm}'
-  s.public_header_files = 'ViroReact/**/*.h', 'ViroFabric/**/*.h'
+  s.source_files        = 'ViroReact/**/*.{h,m,mm}', 'ViroFabric/**/*.{h,m,mm}', 'dist/include/**/*.{h,m,mm}'
+  s.public_header_files = 'ViroReact/**/*.h', 'ViroFabric/**/*.h', 'dist/include/**/*.h'
 
   if File.exist?(File.join(__dir__, 'dist/include'))
     s.source_files += ['dist/include/**/*.{h,m,mm}']
