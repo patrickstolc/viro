@@ -15,12 +15,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '12.0'
   
   # Base source files (always included)
-  s.source_files        = 'ViroReact/**/*.{h,m,mm}', 'ViroFabric/**/*.{h,m,mm}'
-  s.public_header_files = 'ViroReact/**/*.h', 'ViroFabric/**/*.h'
-
-  if File.exist?(File.join(__dir__, 'dist/lib/libViroReact.a'))
-    s.vendored_libraries = 'dist/lib/libViroReact.a'
-  end
+  s.source_files        = 'ViroReact/**/*.{h,m,mm}', 'ViroFabric/**/*.{h,m,mm}', 'dist/include'
+  s.public_header_files = 'ViroReact/**/*.h', 'ViroFabric/**/*.h', 'dist/include/*.h'
 
   # React Native dependencies
   s.dependency 'React-Core'
