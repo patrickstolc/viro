@@ -60,6 +60,7 @@
     "android/arcore_client",
     "ios/dist",
     "ios/ViroFabric",
+    "ios/ViroReact",
     "ios/ViroReact.podspec",
     "bin",
     "LICENSE"
