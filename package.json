@@ -59,8 +59,6 @@
     "android/gvr_common",
     "android/arcore_client",
     "ios/dist",
-    "ios/ViroReact",
-    "ios/ViroFabric",
     "ios/ViroReact.podspec",
     "bin",
     "LICENSE"
