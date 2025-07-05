@@ -27,10 +27,6 @@ Pod::Spec.new do |s|
   s.source_files        = source_files_array
   s.public_header_files = header_files_array
   
-  if File.exist?(File.join(__dir__, 'dist/lib/libViroReact.a'))
-    s.vendored_libraries = 'dist/lib/libViroReact.a'
-  end
-  
   # React Native dependencies
   s.dependency 'React-Core'
   
