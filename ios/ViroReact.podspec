@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.name                = 'ViroReact'
   s.version             = package['version']
   s.summary             = 'Viro React Native library for AR/VR applications'
-  s.source              = { :git => 'https://github.com/patrickstolc/viro.git', :tag => "v#{s.version}" }
+  s.source              = { :git => 'https://github.com/patrickstolc/viro.git' }
   s.homepage            = 'https://github.com/patrickstolc/viro'
   s.license             = { :type => 'MIT', :file => '../LICENSE' }
   s.author              = 'ReactVision'
