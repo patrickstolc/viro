@@ -23,6 +23,10 @@ Pod::Spec.new do |s|
     source_files_array << 'dist/include/**/*.{h,m,mm}'
     header_files_array << 'dist/include/*.h'
   end
+
+  if File.exist?(File.join(__dir__, 'dist/lib/libViroReact.a'))
+    s.vendored_libraries = 'dist/lib/libViroReact.a'
+  end
   
   s.source_files        = source_files_array
   s.public_header_files = header_files_array
